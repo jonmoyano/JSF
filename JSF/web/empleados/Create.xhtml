@@ -15,8 +15,6 @@
                       
                         <p:outputLabel value="#{bundle.CreateEmpleadosLabel_nombre}" for="nombre" />
                         <p:inputText id="nombre" value="#{empleadosController.selected.nombre}" title="#{bundle.CreateEmpleadosTitle_nombre}" required="true" requiredMessage="#{bundle.CreateEmpleadosRequiredMessage_nombre}"/>
-                        <p:outputLabel value="#{bundle.CreateEmpleadosLabel_idEmpleado}" for="idEmpleado" />
-                        <p:inputText id="idEmpleado" value="#{empleadosController.selected.idEmpleado}" title="#{bundle.CreateEmpleadosTitle_idEmpleado}" required="true" requiredMessage="#{bundle.CreateEmpleadosRequiredMessage_idEmpleado}"/>
                         <p:outputLabel value="#{bundle.CreateEmpleadosLabel_idDepartamento}" for="idDepartamento" />
                         <p:selectOneMenu id="idDepartamento" value="#{empleadosController.selected.idDepartamento}" required="true" requiredMessage="#{bundle.EditEmpleadosRequiredMessage_idDepartamento}">
                             <f:selectItems value="#{departamentoController.itemsAvailableSelectOne}"

@@ -1,0 +1,11 @@
+CREATE TABLE departamento(
+id_departamento int primary key not null,
+nombre varchar (45) not null
+);
+
+CREATE TABLE empleados ( 
+id_empleado int primary key not null,
+nombre varchar (45) not null,
+id_departamento int not null,
+foreign key (id_departamento) references departamento(id_departamento) on delete cascade on update cascade
+);
